@@ -56,6 +56,9 @@ GameObject:
   - component: {fileID: 33984948852426302}
   - component: {fileID: 23571124041953310}
   - component: {fileID: 65383812858792548}
+  - component: {fileID: 114920760495048684}
+  - component: {fileID: 114781267397640970}
+  - component: {fileID: 114219434567934780}
   m_Layer: 0
   m_Name: CarPrefab
   m_TagString: CarTag
@@ -383,3 +386,43 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 1, z: 0.7}
   m_Center: {x: 0, y: 0.4, z: -0.07}
+--- !u!114 &114219434567934780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497049850058026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c374c07934d242b4da9d2d03515edbde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 1497049850058026}
+--- !u!114 &114781267397640970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497049850058026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0112a0d5506df46a19f65e275119f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 1497049850058026}
+  unitychan: {fileID: 0}
+  MainCamera: {fileID: 0}
+--- !u!114 &114920760495048684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497049850058026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0409d0484d9eb2648ab7171fb8f6e3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  conePrefab: {fileID: 0}

@@ -833,6 +833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfa9554ed0c39944adbd6c2f9b7efe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  carPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  conePrefab: {fileID: 0}
 --- !u!1 &1237610844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1596,10 @@ Prefab:
       propertyPath: m_LocalRotation.z
       value: 0.0046093795
       objectReference: {fileID: 0}
+    - target: {fileID: 100326, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
   m_IsPrefabParent: 0
@@ -1753,7 +1760,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1204835443
+  randomSeed: 1299912966
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -16,8 +16,10 @@ public class ItemGenerator : MonoBehaviour {
 	//アイテムを出すｘ方向の範囲
 	private float posRange = 3.4f;
 
+
 	// Use this for initialization
 	void Start () {
+
 		//一定の距離ごとにアイテムを生成
 		for(int i = startPos; i < goalPos; i+=15){
 			//どのアイテムを出すのかをランダムに設定
@@ -52,12 +54,5 @@ public class ItemGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	}
-
-	//画面外に出たらアイテムを破棄
-	void OnBecameInvisible(){
-		Destroy (carPrefab.gameObject);
-		Destroy (coinPrefab.gameObject);
-		Destroy (conePrefab.gameObject);
 	}
 }

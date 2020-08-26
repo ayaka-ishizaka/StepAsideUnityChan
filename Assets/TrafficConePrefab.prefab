@@ -22,6 +22,9 @@ GameObject:
   - component: {fileID: 33475904935123560}
   - component: {fileID: 23593026818712304}
   - component: {fileID: 65337839863594414}
+  - component: {fileID: 114278413991540928}
+  - component: {fileID: 114680434068686580}
+  - component: {fileID: 114944237699679050}
   m_Layer: 0
   m_Name: TrafficConePrefab
   m_TagString: TrafficConeTag
@@ -95,3 +98,43 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 3}
   m_Center: {x: 0, y: -0.8, z: 0}
+--- !u!114 &114278413991540928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592569886209068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0409d0484d9eb2648ab7171fb8f6e3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  conePrefab: {fileID: 0}
+--- !u!114 &114680434068686580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592569886209068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0112a0d5506df46a19f65e275119f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 1497049850058026, guid: d6d7d050c7ec43942a0387b0ab1dd8bb, type: 2}
+  unitychan: {fileID: 0}
+  MainCamera: {fileID: 0}
+--- !u!114 &114944237699679050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592569886209068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e111fc7f82a23d4419bd8d1059325615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conePrefab: {fileID: 1592569886209068}
