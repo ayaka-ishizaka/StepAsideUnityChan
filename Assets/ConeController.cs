@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ConeController : MonoBehaviour {
-
-	//conePrefabを入れる
-	public GameObject conePrefab;
-
+	
 	//Unityちゃんのオブジェクト
 	private GameObject unitychan;
 
@@ -18,7 +15,8 @@ public class ConeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (conePrefab.transform.position.z < unitychan.transform.position.z - 5) {
+		//Unityちゃんが通り過ぎたらアイテムを破棄
+		if (transform.position.z < unitychan.transform.position.z - 5) {
 			Destroy (this.gameObject);
 		}
 	}

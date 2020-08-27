@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinController : MonoBehaviour {
-
-	//coinPrefabを入れる
-	public GameObject coinPrefab;
-
+	
 	//Unityちゃんのオブジェクト
 	private GameObject unitychan;
 
@@ -17,7 +14,6 @@ public class CoinController : MonoBehaviour {
 
 		//unityちゃんのオブジェクトを取得
 		this.unitychan = GameObject.Find("unitychan");
-		
 	}
 	
 	// Update is called once per frame
@@ -25,7 +21,8 @@ public class CoinController : MonoBehaviour {
 		//回転
 		this.transform.Rotate(0,3,0);
 
-		if (coinPrefab.transform.position.z < unitychan.transform.position.z - 5) {
+		//Unityちゃんが通り過ぎたらアイテムを破棄
+		if (transform.position.z < unitychan.transform.position.z - 5) {
 			Destroy (this.gameObject);
 		}
 	}

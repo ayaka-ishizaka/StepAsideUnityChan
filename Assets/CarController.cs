@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarController : MonoBehaviour {
-	//carPrefabを入れる
-	public GameObject carPrefab;
-
+	
 	//Unityちゃんのオブジェクト
 	private GameObject unitychan;
 
@@ -17,7 +15,8 @@ public class CarController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (carPrefab.transform.position.z < unitychan.transform.position.z - 5) {
+		//Unityちゃんが通り過ぎたらアイテムを破棄
+		if (transform.position.z < unitychan.transform.position.z - 5) {
 			Destroy (this.gameObject);
 		}
 	}
